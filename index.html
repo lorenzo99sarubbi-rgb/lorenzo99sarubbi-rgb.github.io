@@ -8,7 +8,7 @@
   <title>Lorenzo | HubSpot Automation Specialist</title>
   <style>
     :root{--navy:#0c1728;--navy2:#14253c;--ink:#142238;--muted:#627086;--orange:#ff6e47;--cream:#f7f8fb;--line:#e5e9f0;--white:#fff;--green:#25b981;--shadow:0 18px 60px rgba(18,36,60,.10)}
-    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--white);line-height:1.6} a{color:inherit;text-decoration:none} button,input,select{font:inherit} button{cursor:pointer}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--white);line-height:1.6} a{color:inherit;text-decoration:none} button,input,select,textarea{font:inherit} button{cursor:pointer}
     .container{width:min(1120px,calc(100% - 44px));margin-inline:auto} .nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:800;letter-spacing:-.035em;font-size:20px}.mark{display:grid;place-items:center;background:var(--orange);color:white;border-radius:12px;width:36px;height:36px;font-size:20px;font-weight:900}.nav-links{display:flex;align-items:center;gap:28px;font-size:14px;font-weight:650;color:#425068}.nav-links a:hover,.footer a:hover{color:var(--orange)}.pill,.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;font-weight:750;transition:transform .2s,box-shadow .2s}.pill:hover,.btn:hover{transform:translateY(-2px)}.nav-cta{padding:10px 20px;color:var(--navy)!important;background:#fff;border:1px solid #dce2eb;white-space:nowrap}
     .hero{position:relative;overflow:hidden;background:var(--navy);color:#fff;padding:82px 0 100px}.hero:before{content:"";position:absolute;width:600px;height:600px;background:radial-gradient(circle,rgba(255,110,71,.16),transparent 68%);right:-120px;top:-190px;pointer-events:none}.hero:after{content:"";position:absolute;width:390px;height:390px;border:1px solid rgba(255,255,255,.055);border-radius:50%;left:-220px;bottom:-220px}.hero-grid{display:grid;grid-template-columns:1.06fr .94fr;gap:46px;align-items:center;position:relative}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:#ffd0c3;text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:800;margin-bottom:20px}.eyebrow:before{content:"";width:8px;height:8px;border-radius:100%;background:var(--orange);box-shadow:0 0 0 5px rgba(255,110,71,.13)} h1{font-size:clamp(42px,5.2vw,66px);line-height:1.09;letter-spacing:-.063em;margin:0 0 22px;max-width:680px}h1 em{font-style:normal;color:var(--orange)}.lead{max-width:580px;color:#bac6d8;font-size:17px;line-height:1.75;margin:0 0 29px}.hero-actions{display:flex;flex-wrap:wrap;gap:12px}.btn{padding:15px 23px;border:0;font-size:14px}.btn-primary{background:var(--orange);color:var(--navy);box-shadow:0 12px 24px rgba(255,110,71,.16)}.btn-outline{color:#fff;background:transparent;border:1px solid #5e6d80}.btn-dark{color:#fff;background:var(--navy)}.hero-note{font-size:12px;color:#8696ae;margin-top:18px}
     .panel{padding:23px;background:rgba(255,255,255,.075);border:1px solid rgba(255,255,255,.13);box-shadow:0 20px 75px rgba(0,0,0,.19);backdrop-filter:blur(18px);border-radius:22px;transform:rotate(1.5deg)}.panel-top{display:flex;align-items:center;justify-content:space-between;padding-bottom:17px;border-bottom:1px solid rgba(255,255,255,.12)}.panel h3{font-size:15px;margin:0}.status{color:#a8edc8;font-size:11px;font-weight:750;display:flex;align-items:center;gap:6px}.status:before{content:"";display:block;width:7px;height:7px;background:var(--green);border-radius:50%}.steps{padding:20px 0 0;display:grid;gap:10px}.step{display:flex;gap:12px;align-items:center;padding:12px 13px;border-radius:12px;background:rgba(255,255,255,.08);font-size:12px;color:#d7e1f0}.sicon{width:32px;height:32px;display:grid;place-items:center;flex-shrink:0;border-radius:10px;background:rgba(255,110,71,.15);color:#ffb5a2;font-size:17px}.step b{display:block;color:#fff;font-size:13px}.connector{width:1px;height:10px;border-left:2px dashed #68788c;margin-left:29px}.panel-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:21px;padding-top:13px;display:flex;justify-content:space-between;color:#91a0b5;font-size:11px}
@@ -19,11 +19,19 @@
     @media(max-width:900px){.hero-grid,.how-grid,.feature{grid-template-columns:1fr}.hero-grid{gap:40px}.panel{max-width:520px;transform:none}.cards{grid-template-columns:1fr 1fr}.nav-links{gap:15px}.hero{padding:66px 0 70px}.cta-layout{align-items:flex-start;flex-direction:column}}
     @media(max-width:620px){.container{width:min(100% - 32px,1120px)}.nav{height:67px}.brand{font-size:18px}.nav-links a:not(.nav-cta){display:none}.nav-cta{padding:8px 13px;font-size:12px}.hero{padding:55px 0 60px}.hero-grid{gap:25px}.lead{font-size:15px}.panel{padding:18px}.cards{grid-template-columns:1fr}.card{padding:24px}section{padding:65px 0}.feature-panel{padding:25px}.footer-inner{flex-direction:column;align-items:flex-start}.footer a:first-child{margin-left:0}}
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+
+    .contact-copy{flex:1;min-width:0}.contact-email{margin-top:27px!important;font-size:13px}.contact-email a{color:#fff;font-weight:750;text-decoration:underline;text-underline-offset:3px}
+    .contact-form{display:grid;gap:10px;flex:0 1 440px;min-width:min(100%,360px);background:#fff;color:var(--ink);padding:27px;border-radius:20px;box-shadow:0 17px 54px rgba(0,0,0,.16)}
+    .contact-form h3{margin:0 0 4px;font-size:20px;letter-spacing:-.025em}.contact-form label{font-weight:700;font-size:12px;margin-top:5px}
+    .contact-form input:not(.honeypot),.contact-form textarea{width:100%;border:1px solid #d9e0e9;background:#fff;border-radius:10px;padding:12px;font:inherit;color:var(--ink);outline-color:var(--orange);font-size:14px}
+    .contact-form textarea{resize:vertical;min-height:112px}.contact-form input::placeholder,.contact-form textarea::placeholder{color:#8692a5}.contact-form .contact-submit{width:100%;border:0;margin-top:7px;padding:14px 18px}
+    .contact-form .contact-privacy{font-size:11px;line-height:1.55;color:#6b7585;margin:2px 0 0;max-width:none}.contact-form .honeypot{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+    @media(max-width:900px){.contact-form{width:100%;flex-basis:auto;min-width:0}.contact-copy{width:100%}}
   </style>
 </head>
 <body>
   <header class="container nav">
-    <a href="#top" class="brand" aria-label="Torna all'inizio"><span class="mark">L.</span><span>Lorenzo<span style="color:#ff6e47">.</span></span></a>
+    <a href="#top" class="brand" aria-label="Torna all'inizio"><span class="mark">LS</span><span>Lorenzo Sarubbi</span></a>
     <nav class="nav-links" aria-label="Navigazione principale">
       <a href="#servizi">Servizi</a><a href="#come-lavoro">Come lavoro</a><a href="#demo">Demo</a><a href="#contatti" class="pill nav-cta">Parliamone ↗</a>
     </nav>
@@ -68,9 +76,33 @@
     <button class="btn btn-dark run-btn" id="simulate" type="button">Esegui simulazione ↗</button>
     <div class="demo-out" id="demoOut" role="status" aria-live="polite"><h4>✓ Workflow eseguito (simulazione)</h4><p id="demoText"></p></div><p class="demo-disclaimer">Tutti i risultati sono fittizi. Nessun CRM o dato del cliente viene modificato.</p></div></div></section>
     <section><div class="container feature"><div class="feature-panel"><small>Ambiti di intervento</small><h3>Supporto operativo nei processi che contano.</h3><span class="tag">HubSpot</span><span class="tag">Sales Operations</span><span class="tag">Workflow</span><span class="tag">Lead Management</span><span class="tag">Reporting</span><span class="tag">CRM Optimization</span></div><div class="feature-copy"><span class="kicker">A chi mi rivolgo</span><h2>Per chi usa già HubSpot e vuole farlo funzionare meglio.</h2><p>Un piccolo workflow ben progettato può essere più utile di un grande progetto che non parte mai.</p><ul><li>Agenzie digitali che cercano supporto su task specifici</li><li>PMI B2B con processi commerciali da automatizzare</li><li>Team marketing e sales che vogliono ridurre il lavoro manuale</li></ul></div></div></section>
-    <section class="cta-section" id="contatti"><div class="container cta-layout"><div><span class="kicker">Contatti</span><h2>Hai un workflow da creare o sistemare?</h2><p>Scrivimi cosa vorresti automatizzare. Valuteremo insieme se è un intervento che posso seguire.</p></div><div class="cta-actions"><a class="btn btn-primary" href="mailto:lorenzo99sarubbi@gmail.com?subject=Richiesta%20collaborazione%20HubSpot&body=Ciao%20Lorenzo%2C%0A%0AVorrei%20migliorare%20questo%20processo%20HubSpot%3A%0A%0A">Invia un'email ↗</a></div></div></section>
+    <section class="cta-section" id="contatti">
+      <div class="container cta-layout">
+        <div class="contact-copy">
+          <span class="kicker">Contatti</span>
+          <h2>Hai un workflow da creare o sistemare?</h2>
+          <p>Raccontami cosa vorresti automatizzare. Ti risponderò via email per capire se posso aiutarti con un intervento mirato.</p>
+          <p class="contact-email">Preferisci scrivere dalla tua casella di posta? <a href="mailto:lorenzo99sarubbi@gmail.com?subject=Richiesta%20collaborazione%20HubSpot">Scrivimi un'email ↗</a></p>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/lorenzo99sarubbi@gmail.com" method="POST">
+          <h3>Parliamo del tuo progetto</h3>
+          <input type="hidden" name="_subject" value="Nuova richiesta dal sito HubSpot di Lorenzo Sarubbi">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_url" value="https://lorenzo99sarubbi-rgb.github.io/">
+          <input type="text" name="_honey" tabindex="-1" autocomplete="off" class="honeypot" aria-hidden="true">
+          <label for="contact-name">Nome e cognome</label>
+          <input id="contact-name" name="name" type="text" maxlength="120" autocomplete="name" placeholder="Come ti chiami?" required>
+          <label for="contact-email">La tua email</label>
+          <input id="contact-email" name="email" type="email" maxlength="250" autocomplete="email" placeholder="nome@azienda.it" required>
+          <label for="contact-message">Di cosa hai bisogno?</label>
+          <textarea id="contact-message" name="message" rows="5" maxlength="5000" placeholder="Descrivi brevemente il tuo CRM e l'automazione che vorresti creare o migliorare." required></textarea>
+          <button class="btn btn-primary contact-submit" type="submit">Invia richiesta ↗</button>
+          <p class="contact-privacy">Il messaggio viene recapitato a <strong>lorenzo99sarubbi@gmail.com</strong> tramite il servizio esterno FormSubmit. Non inserire password o dati sensibili.</p>
+        </form>
+      </div>
+    </section>
   </main>
-  <footer class="footer"><div class="container footer-inner"><span><strong>Lorenzo.</strong> HubSpot & Marketing Operations · Sito dimostrativo</span><div><a href="#servizi">Servizi</a><a href="#come-lavoro">Metodo</a><a href="#top">Torna su ↑</a></div></div></footer>
+  <footer class="footer"><div class="container footer-inner"><span><strong>Lorenzo Sarubbi</strong> · HubSpot & Marketing Operations</span><div><a href="#servizi">Servizi</a><a href="#come-lavoro">Metodo</a><a href="#top">Torna su ↑</a></div></div></footer>
   <script>
     document.getElementById('simulate').addEventListener('click', function(){
       const area=document.getElementById('area').value;
